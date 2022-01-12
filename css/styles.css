@@ -1,0 +1,710 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*estilos generales*/
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+html{
+    /* 1 rem = 16px */   
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+    
+}
+
+body{
+    color: white;
+    font-family: sans-serif;
+    background-color: black;
+}
+#padre__grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 23.625rem repeat(3,1fr) 22.625rem;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    
+}
+
+/*FIN ESTILOS GENERALES*/
+
+/*INICIO DE HEADER Y MENU NAV*/
+
+#header{
+    grid-area: 1 / 1 / 2 / 6;
+
+    width: 1250px;
+    margin: 0px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #3D3D3D;
+    
+}
+.img-logo{
+    display: block;
+    margin: 0px;
+    float: left;
+    width: 35%;
+    height: 180px;
+    background: black;
+    cursor: pointer;
+}
+
+.navegacion{
+    display: block;
+    float: right;
+    width: 65%;
+    height: 180px;
+    text-align: center;
+    background-color: black;
+}
+.navegacion ul li{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 20px;
+    line-height: 140px;
+   
+}
+.navegacion ul li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    transition: all 200ms;
+   
+}
+.navegacion ul li a:hover{
+    
+    border-right: 1px solid #3D3D3D;
+    
+    color: #7842B2;
+    transform: scale(1.2,1.2);
+}
+/*FIN DE HEADER/MENU NAV*/
+
+/*INICIO DEL CONTENIDO NOSOTROS*/
+#box-content{
+    grid-area: 2 / 1 / 5 / 6;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 834px;
+
+}
+
+/* INICIO ESTILOS CAJAS NOSOTROS*/
+.articles__nosotros{
+    width: 50%;
+    height: auto;
+    margin: 20px;
+}
+.articles__nosotros h1{
+    margin: 20px;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+
+}
+
+.article{
+    display: block;
+    height: 300px;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 12px 13px 20px -16px white,1px -2px 51px 10px rgba(0,0,0,0.58) inset;
+    color: black;
+    background: linear-gradient(0deg, rgba(120,66,178,1) 67%, rgba(63,0,155,1) 98%);
+}
+
+.article p{
+    font-family: sans-serif;
+    font-size: 2rem;
+    color:#ccc;
+    text-shadow: 1px 1px 5px black;
+}
+/*FIN ESTILOS CAJAS NOSOTROS*/
+
+
+/*INICIO ASIDE STAFF*/
+
+.staff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.staff__card{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px 0px 50px 0px;
+}
+
+.name{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 250px;
+    text-align: center;
+    width: 150px;
+}
+
+.img-staff{
+    margin: 50px;
+    border: 1px solid white;
+}
+
+.img-staff img{
+    width: 150px;
+    height: 150px;
+   transition: all 200ms;
+}
+
+/*FIN DE ASIDE STAFF*/
+
+/*FIN PAGINA Y CONTENIDO NOSOTROS*/
+
+
+
+/*INICIO DE SECCION SERVICIO*/
+
+#articles__servicio{
+    grid-area: 2 / 1 / 5 / 6;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    padding: 20px;
+
+}
+#articles__servicio h1{
+    font-size: 3.5rem;
+    margin: 25px;
+    height: 80px;
+}
+#articles__servicio p{
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 25px;
+}
+
+
+/*TABLA ESTILOS GENERALES*/
+.tabla__servicios{
+    display: block;
+    width: 50%;
+    height: 200px;
+    margin: 0px auto;
+    margin-bottom: 25px;
+}
+.tabla__servicios td{
+    border-top: 1px solid #3D3D3D;
+    width:25%;
+    height: 90px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.borde_derecho{
+    border-right: 1px solid #3D3D3D;
+
+}
+
+/*FIN DE TABLA ESTILOS GENERALES*/
+
+
+.servicios__aclaracion{
+    width: 100%;
+    height: 100px;
+    font-size: 1.5rem;
+    line-height: 90px;
+    font-weight: bold;
+    color: #A280CD;
+}
+
+
+.color_violeta{
+    color:#A280CD ;
+}
+
+.img-servicio{
+    display: block;
+    
+    margin: 0px auto;
+    width: 50%;
+    height: 250px;
+}
+
+.img-servicio img{
+    margin: 25px;
+    width: 400px;
+    height: 250px;
+}
+
+
+/*FIN DE PAGINA SERVICIO*/
+
+
+/*INICIO DE PAGINA BARRAS*/
+
+#barras{
+    grid-area: 2 / 1 / 5 / 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#barras h1{
+    margin: 20px;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+}
+#barras p{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 25px;
+}
+
+.box-barras{
+    width: 100%;
+    height: 800px;
+}
+
+.reseña-barra{
+    width: 95%;
+    height: 300px;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 12px 13px 20px -16px white,1px -2px 51px 10px rgba(0,0,0,0.58) inset;
+    color: black;
+    background: linear-gradient(0deg, rgba(120,66,178,1) 67%, rgba(63,0,155,1) 98%);
+}
+.reseña-barra p{
+    font-family: sans-serif;
+    font-size: 2rem;
+    color:#ccc;
+    text-shadow: 1px 1px 5px black;
+}
+
+/*FIN DE PAGINA BARRAS*/
+
+/*INICIO DE PAGINA COCTELES*/
+#cocteles{
+    grid-area: 2 / 1 / 5 / 6;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#cocteles h1{
+    margin: 20px;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+}
+
+#cocteles .subtittle{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 25px;
+}
+
+.img-coctel{
+    margin: 0px auto;
+}
+.img-coctel img{
+    width: 600px;
+    height: 400px;
+}
+
+.cocteles-wrap{
+    margin: 0px auto;
+    
+    width: 90%;
+}
+
+.cocteles-wrap h2{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.box-cocteles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+    border: 1px solid #3D3D3D;
+}
+
+.cocteles__autor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,200px) 50px;
+    row-gap: 80px;
+}
+
+.cocteles__directos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,200px) 50px;
+    row-gap: 80px;
+}
+
+.cocteles__clasicos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,200px) 50px;
+    row-gap: 80px;
+}
+
+.coctel{
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    margin: 20px;
+}
+.coctel .nombre{
+    padding: 5px;
+    font-size: 2.5rem;
+    list-style: square;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.description {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 80%;
+    font-size: 2rem;
+    text-align: left;
+    border-bottom: 1px solid #3D3D3D;
+}
+.description__flavor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 85%;
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+
+.description__flavor ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 1.3rem;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.caja_d{
+    width: 49px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #F42AF4;
+    
+}
+
+.caja_a{
+    width: 49px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #00FFFF;
+
+}
+
+/*FIN DE PAGINA COCTELES*/
+
+/*INICIO DE PAGINA CONTACTO*/
+#contacto{
+    grid-area: 2 / 1 / 5 / 6;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*FIN DE PAGINA CONTACTO*/
+
+
+
+
+/*INICIO DE FOOTER*/
+
+#footer{
+    grid-area: 5 / 1 / 6 / 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    background: black;
+    border-top: 1px solid #3D3D3D;
+    
+}
+.img-footer img{
+    width: 350px;
+    height: 180px;
+    cursor: pointer;
+}
+.menu-footer{
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+.menu-footer ul {
+    display: flex;
+    width: 100%;
+    line-height: 180px;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.menu-footer li{
+    list-style: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+ 
+.menu-footer a{
+    text-decoration: none;
+    color: white;
+    transition: all 200ms;
+}
+
+.menu-footer a:hover{
+    color: #7842b2;
+}
+/*FIN DE FOOTER*/
+
+/*RESPONSIVE PRINCIPAL*/
+@media (max-width:425px) { 
+    #padre__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:35% 10% 30% 20% ;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+        
+    }
+   
+    #header{
+        grid-area: 1 / 2 / 3 / 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+    }
+    .img-logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+    }
+    .img-logo img{
+        width: 450px;
+        height: 250px;
+    }
+    .navegacion ul li{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 50px;
+        font-size: 3.5rem;
+        
+        
+        width: 100%;
+        height: 50px;
+    }
+    .navegacion ul li a{
+        width: 50%;
+        height: 50px;
+        border: 1px solid #7842b2 ;
+        border-radius: 20px;
+        background: linear-gradient(0deg, rgba(120,66,178,1) 67%, rgba(63,0,155,1) 98%);
+
+    }
+
+    /*FIN HEADER*/
+    #box-content{
+        grid-area: 3 / 1 / 5 / 5;
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .articles__nosotros{
+        width: 95%;
+        height: auto;
+        margin: 20px;
+    }
+    .articles__nosotros h1{
+        margin: 30px;
+        font-size: 4rem;
+        padding-left: 30px;
+
+    }
+
+    .article{
+        height: 400px;
+        margin: 15px;
+        margin-bottom: 30px;
+        padding: 20px;
+        
+    }
+    
+    .article p{
+        font-size: 3rem;
+        color:#ccc;
+        text-shadow: 1px 1px 5px black;
+    }
+    /*FIN DE CONTENIDO CAJAS*/
+
+    .staff{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+      
+    }
+
+    .name{
+        font-size: 3rem;
+        line-height: 250px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .img-staff img{
+        width: 200px;
+        height: 200px;
+       
+    }
+    /*FIN ASIDE STAFF*/
+
+    /*INICIO DE SERVICIO*/
+
+    #articles__servicio{
+       
+        grid-area: 3 / 1 / 5 / 5;
+       
+        width: 100%;
+        height: 900px;
+        text-align: center;
+        padding: 20px;
+    
+    }
+
+    #articles__servicio p{
+        font-size: 3rem;
+        text-align: center;
+        height: 50px;
+       
+    }
+
+    #articles__servicio h1{
+        font-size: 4rem;
+        margin: 25px;
+        height: 80px;
+    }
+
+    .tabla__servicios{
+       
+        width: 90%;
+        height: 300px;
+        
+        margin-bottom: 30px;
+    }
+    .tabla__servicios td{
+        width:25%;
+        height: 90px;
+        font-size: 2.5rem;
+    }
+    
+    .servicios__aclaracion{
+        font-size: 2rem;
+        line-height: 60px;
+    }
+    
+
+    /*FIN SERVICIO*/
+
+    /*INICIO BARRAS*/
+    #barras{
+        grid-area: 3 / 1 / 5 / 5;
+    }
+    /*FIN DE BARRAS*/
+
+    /*INICIO DE COCTELES*/
+    #cocteles{
+        grid-area: 3 / 1 / 5 / 5;
+    }
+    /*FIN DE COCTELES*/
+
+    /*INIICIO DE CONTACTO*/
+    #contacto{
+        grid-area: 3 / 1 / 5 / 5;
+    }
+    /*FIN DE CONTACTO*/
+
+    #footer{
+        grid-area: 5 / 1 / 6 / 6;
+        width: 100%;
+    }
+
+    .menu-footer li{
+        font-size: 3rem;
+        
+    }
+    /*FIN FOOTER*/
+}
+
+
