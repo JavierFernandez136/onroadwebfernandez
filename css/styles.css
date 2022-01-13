@@ -88,7 +88,7 @@ body{
 /*FIN DE HEADER/MENU NAV*/
 
 /*INICIO DEL CONTENIDO NOSOTROS*/
-#box-content{
+#box__content{
     grid-area: 2 / 1 / 5 / 6;
     display: flex;
     flex-direction: row-reverse;
@@ -97,12 +97,12 @@ body{
 }
 
 /* INICIO ESTILOS CAJAS NOSOTROS*/
-.articles__nosotros{
+.articles__caja{
     width: 50%;
     height: auto;
     margin: 20px;
 }
-.articles__nosotros h1{
+.articles__caja h1{
     margin: 20px;
     text-align: center;
     font-size: 3.5rem;
@@ -112,7 +112,7 @@ body{
 
 }
 
-.article{
+.article__nosotros{
     display: block;
     height: 300px;
     margin: 15px;
@@ -124,7 +124,7 @@ body{
     background: linear-gradient(0deg, rgba(120,66,178,1) 67%, rgba(63,0,155,1) 98%);
 }
 
-.article p{
+.article__nosotros p{
     font-family: sans-serif;
     font-size: 2rem;
     color:#ccc;
@@ -135,7 +135,7 @@ body{
 
 /*INICIO ASIDE STAFF*/
 
-.staff{
+.staff__caja{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,13 +145,13 @@ body{
     text-align: center;
 }
 
-.staff__card{
+.staff__nosotros{
     display: flex;
     flex-direction: row-reverse;
     margin: 50px 0px 50px 0px;
 }
 
-.name{
+.name__staff{
     color: white;
     font-size: 1.5rem;
     line-height: 250px;
