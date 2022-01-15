@@ -25,7 +25,7 @@ body{
     font-family: sans-serif;
     background-color: black;
     line-height: inherit;
-    
+
     
 }
 #padre__grid{
@@ -91,6 +91,14 @@ body{
     
     color: #7842B2;
     transform: scale(1.2,1.2);
+}
+
+.boton__navegacion{
+    background-color: #7842B2;
+    border-radius:25px;
+    height: 125px;
+    width: 100px;
+    
 }
 /*FIN DE HEADER/MENU NAV*/
 
