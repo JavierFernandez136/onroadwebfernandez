@@ -112,39 +112,7 @@ body{
 }
 
 /* INICIO ESTILOS CAJAS NOSOTROS*/
-.articles__caja{
-    width: 50%;
-    height: auto;
-    margin: 20px;
-}
-.articles__caja h1{
-    margin: 20px;
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: bold;
-    font-family: sans-serif;
-    color: white;
 
-}
-
-.article__nosotros{
-    display: block;
-    height: 300px;
-    margin: 15px;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 12px 13px 20px -16px white,1px -2px 51px 10px rgba(0,0,0,0.58) inset;
-    color: black;
-    background: linear-gradient(0deg, rgba(120,66,178,1) 67%, rgba(63,0,155,1) 98%);
-}
-
-.article__nosotros p{
-    font-family: sans-serif;
-    font-size: 2rem;
-    color:#ccc;
-    text-shadow: 1px 1px 5px black;
-}
 /*FIN ESTILOS CAJAS NOSOTROS*/
 
 

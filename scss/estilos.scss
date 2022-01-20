@@ -1,0 +1,39 @@
+
+.articles__caja{
+        width: 50%;
+        height: auto;
+        margin: 20px;
+    h1{
+        margin: 20px;
+        text: {
+            align:center;
+            transform: uppercase;
+        }
+        letter-spacing: 1px;
+       font: {
+           size: 3.5rem;
+           weight:bold;
+           family:sans-serif;
+       }
+        color: white;
+    }
+    .article__nosotros{
+        display: block;
+        height: 300px;
+        margin: 15px;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 12px 13px 20px -16px white,1px -2px 51px 10px rgba(0,0,0,0.58) inset;
+        color: black;
+        background: linear-gradient(0deg, rgba(120,66,178,1) 67%, rgba(63,0,155,1) 98%);
+    p{
+        font: {
+            family:sans-serif;
+            size: 2rem;
+        }
+        color:#ccc;
+        text-shadow: 1px 1px 5px black;
+    }
+    }
+}
