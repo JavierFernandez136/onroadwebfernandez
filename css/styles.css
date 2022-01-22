@@ -112,46 +112,13 @@ body{
 }
 
 /* INICIO ESTILOS CAJAS NOSOTROS*/
-
+/*ESTILOS DE CONTENIDO NOSOTROS PASADOS A SASS*/
 /*FIN ESTILOS CAJAS NOSOTROS*/
 
 
 /*INICIO ASIDE STAFF*/
 
-.staff__caja{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    height: auto;
-    margin-top: 60px;
-    text-align: center;
-}
-
-.staff__nosotros{
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 50px 0px 50px 0px;
-}
-
-.name__staff{
-    color: white;
-    font-size: 1.5rem;
-    line-height: 250px;
-    text-align: center;
-    width: 150px;
-}
-
-.img-staff{
-    margin: 50px;
-    border: 1px solid white;
-}
-
-.img-staff img{
-    width: 150px;
-    height: 150px;
-   transition: all 200ms;
-}
+/*ESTILOS STAFF EN SASS*/
 
 /*FIN DE ASIDE STAFF*/
 
