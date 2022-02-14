@@ -83,4 +83,212 @@
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
+
+#contacto {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: 2 / 1 / 5 / 6;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*EXTEND A APLICAR*/
+}
+
+#contacto h1 {
+  margin: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+}
+
+#contacto .primerEstilo, #contacto .contenedor_contacto .box-contacto .segundoEstilo {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 25px;
+}
+
+#contacto .contenedor_contacto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#contacto .contenedor_contacto .box-contacto {
+  width: 100%;
+  height: 500px;
+  margin-top: 15px;
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 1 / 3 / 3;
+  /*EXTEND*/
+  /*MIXIN*/
+}
+
+#contacto .contenedor_contacto .box-contacto .segundoEstilo {
+  color: #7842B2;
+}
+
+#contacto .contenedor_contacto .box-contacto .h2conMixin {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#contacto .contenedor_contacto .box-contacto .contenedor_contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 25px;
+  margin-top: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contacto .contenedor_contacto .box-contacto .contenedor_contacto .nombre_tel {
+  border-right: 1px solid #3D3D3D;
+}
+
+#contacto .contenedor_contacto .box-contacto .contenedor_contacto .nombre_tel h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px;
+}
+
+#contacto .contenedor_contacto .box-contacto .contenedor_contacto .nombre_tel spam {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+#contacto .contenedor_contacto .consulta {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 2 / 2 / 4;
+}
+
+#contacto .contenedor_contacto .consulta h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+
+#contacto .contenedor_contacto .consulta form {
+  width: 95%;
+  height: 350px;
+  margin-top: 50px;
+  padding: 15px;
+  border: 1px solid #3D3D3D;
+}
+
+#contacto .contenedor_contacto .consulta form textarea {
+  width: 100%;
+  background-color: #3D3D3D;
+  font-size: 1.5rem;
+}
+
+#contacto .contenedor_contacto .consulta form input {
+  width: 100%;
+  height: 25px;
+  background-color: #3D3D3D;
+  margin-bottom: 1px;
+  padding-left: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#contacto .contenedor_contacto .consulta form .boton {
+  margin-top: 15px;
+  width: 50%;
+  border: 1px solid #3D3D3D;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #7842B2;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+#contacto .contenedor_contacto .consulta form .boton:hover {
+  color: black;
+}
+
+#contacto .contenedor_contacto .box-ubicacion {
+  width: 100%;
+  height: 500px;
+  margin-top: 15px;
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 3 / 3 / 5;
+}
+
+#contacto .contenedor_contacto .box-ubicacion h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#contacto .contenedor_contacto .box-ubicacion .map {
+  margin-top: 50px;
+}
+
+#contacto .contenedor_contacto .box-ubicacion .map iframe {
+  width: 350px;
+  height: 350px;
+  border-radius: 15px;
+}
+
+.pink {
+  color: pink;
+}
+
+.green {
+  color: green;
+}
+
+.black {
+  color: black;
+}
 /*# sourceMappingURL=estilos.css.map */
