@@ -26,7 +26,7 @@ body{
     background-color: black;
     line-height: inherit;
     outline: none;
-
+    overflow-x: hidden;
     
 }
 #padre__grid{
@@ -471,7 +471,7 @@ body{
     #padre__grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows:35% 10% 30% 20% ;
+        grid-template-rows:250px 15% 20% ;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         width: 100%;
@@ -479,7 +479,7 @@ body{
     }
    
     #header{
-        grid-area: 1 / 2 / 3 / 3;
+        grid-area: 1 / 2 / 1 / 3;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -494,6 +494,16 @@ body{
     .img-logo img{
         width: 450px;
         height: 250px;
+       
+    }
+    .navbar-nav{
+        
+        background: rgba( 61, 61, 61, 0.1 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4.5px );
+        -webkit-backdrop-filter: blur( 4.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
     .navegacion ul li{
         display:flex;
@@ -502,6 +512,7 @@ body{
         justify-content: center;
         line-height: 50px;
         font-size: 3.5rem;
+        
         
         
         width: 100%;
@@ -517,8 +528,8 @@ body{
     }
 
     /*FIN HEADER*/
-    #box-content{
-        grid-area: 3 / 1 / 5 / 5;
+    #box__content{
+        grid-area: 3 / 1 / 5 / 6;
         display: flex;
         flex-direction:column-reverse;
         align-items: center;
@@ -526,19 +537,19 @@ body{
         height: auto;
     }
 
-    .articles__nosotros{
+    .articles__caja{
         width: 95%;
         height: auto;
         margin: 20px;
     }
-    .articles__nosotros h1{
+    .articles__caja h1{
         margin: 30px;
         font-size: 4rem;
         padding-left: 30px;
 
     }
 
-    .article{
+    .article__nosotros{
         height: 400px;
         margin: 15px;
         margin-bottom: 30px;
@@ -546,14 +557,14 @@ body{
         
     }
     
-    .article p{
+    .article__nosotros p{
         font-size: 3rem;
         color:#ccc;
         text-shadow: 1px 1px 5px black;
     }
     /*FIN DE CONTENIDO CAJAS*/
 
-    .staff{
+    .staff__caja{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -564,8 +575,8 @@ body{
       
     }
 
-    .name{
-        font-size: 3rem;
+    .name__staff h2{
+        font-size: 2rem;
         line-height: 250px;
         width: 100%;
         height: 250px;
@@ -582,9 +593,9 @@ body{
 
     #articles__servicio{
        
-        grid-area: 3 / 1 / 5 / 5;
+        grid-area: 3 / 1 / 5 / 3;
        
-        width: 100%;
+        width: 95%;
         height: 900px;
         text-align: center;
         padding: 20px;
@@ -606,7 +617,7 @@ body{
 
     .tabla__servicios{
        
-        width: 90%;
+        width: 100%;
         height: 300px;
         
         margin-bottom: 30px;
@@ -614,11 +625,11 @@ body{
     .tabla__servicios td{
         width:25%;
         height: 90px;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
-    .servicios__aclaracion{
-        font-size: 2rem;
+    .servicios__aclaracion h3{
+        font-size: 2.5rem;
         line-height: 60px;
     }
     
@@ -629,18 +640,42 @@ body{
     #barras{
         grid-area: 3 / 1 / 5 / 5;
     }
+    #barras h1{
+        font-size: 4rem;
+    }
+    #barras p{
+        font-size: 3rem;
+    }
     /*FIN DE BARRAS*/
 
     /*INICIO DE COCTELES*/
     #cocteles{
-        grid-area: 3 / 1 / 5 / 5;
+        grid-area: 2 / 1 / 5 / 5;
     }
+    #cocteles h1{
+        font-size: 4rem;
+    }
+    
+    #cocteles .subtittle{
+        font-size: 3rem;
+    }
+    .coctel ul li{ 
+        font-size: 2.5rem;
+    }
+    .description{
+        font-size: 2rem;
+    }
+    
     /*FIN DE COCTELES*/
 
     /*INIICIO DE CONTACTO*/
     #contacto{
         grid-area: 3 / 1 / 5 / 5;
+        
     }
+    
+    
+
     /*FIN DE CONTACTO*/
 
     #footer{
@@ -653,6 +688,43 @@ body{
         
     }
     /*FIN FOOTER*/
+}
+
+@media (max-width:575px){
+    
+    .navbar-nav{
+        z-index: 1;
+        background: rgba( 61, 61, 61, 0.1 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4.5px );
+        -webkit-backdrop-filter: blur( 4.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .navegacion ul li{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 50px;
+        font-size: 3.5rem;
+        
+        
+        
+        width: 100%;
+        height: 50px;
+    }
+    .navegacion ul li a{
+        width: 50%;
+        height: 50px;
+        border: 1px solid #7842b2 ;
+        border-radius: 20px;
+        background: linear-gradient(0deg, rgba(120,66,178,1) 67%, rgba(63,0,155,1) 98%);
+
+    }
+    .navegacion{
+        z-index: 2;
+    }
 }
 
 
